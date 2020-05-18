@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>p30</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<form>
+
+    Ingrese su nombre:
+    <input type="text" id="nombre"><br>
+    Ingrese su Email:
+    <input type="text" id="Email"><br>
+    Deje un comentario:<br>
+    <textarea id="coment" rows="10" cols="40"></textarea><br>
+    <input type="button" value="Enviar" onClick="alerta()">
+      
+</form>
+
+<script>
+
+  function alerta()
+  {
+    var nombre=document.getElementById('nombre').value;
+    var Email=document.getElementById('Email').value;
+    var coment=document.getElementById('coment').value;
+    alert(nombre+'\n'+Email+'\n'+coment);
+  }
+
+</script>
+
+
+
+</body>
+</html>
